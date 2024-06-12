@@ -1,10 +1,14 @@
 # SFM-Selenium-Handler
-Usado para facilitar a manipulação do sistema de gestão de chão de fábrica utilizada pela empresa
 
-Com funções de fácil utilização que buscam os xpaths dos elementos
+Este é um pacote usado para facilitar a manipulação do sistema de gestão de chão de fábrica utilizada pela empresa.
 
-Exemplo:
+Ele fornece funções de fácil utilização que buscam os xpaths dos elementos.
 
+## Exemplo de Uso
+
+```python
+from sfm_selenium_handler import WSFM
+from time import sleep
 
 SFM = WSFM(driver, "usuario1", "senha123")
 
@@ -16,7 +20,7 @@ SFM.esperar_escrever("//input[contains(@class, 'form-control input-daterange')]"
 
 SFM.esperar_clicar("//a[text()='Atualizar']")
 
-SFM.esperar_clicar("//a[text()='Filtrar']") 
+SFM.esperar_clicar("//a[text()='Filtrar']")
 
 SFM.esperar_clicar("//a[text()='Filtrar'][1]")
 
@@ -35,6 +39,7 @@ SFM.esperar_apagar_texto("//input[contains(@id, 'sectionComboboxhierarchy')]")
 SFM.esperar_escrever("//input[contains(@id, 'sectionComboboxhierarchy')]", "Secao Caldeiraria Montagem", True)
 
 SFM.esperar_clicar("//span[text()='Gerar relatório']")
+
 
 SFM.esperar_clicar("//span[text()='Exportar']")
 
