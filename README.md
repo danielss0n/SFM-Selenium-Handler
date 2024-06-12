@@ -1,6 +1,8 @@
 # SFM-Selenium-Handler
 Usado para facilitar a manipulação do sistema de gestão de chão de fábrica utilizada pela empresa
 
+Com funções de fácil utilização que buscam os xpaths dos elementos
+
 Exemplo:
 
 
